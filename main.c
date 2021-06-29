@@ -66,6 +66,7 @@ void swap_max(int array[], int length, int n)
     array[n]=temp;
 }
 
+
 void ssort(int array[], int length)
 {
   for(int i=0;i<length-1;i++)
@@ -73,4 +74,3 @@ void ssort(int array[], int length)
     swap_max(array,length, i);
   }
 }
-
