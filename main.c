@@ -51,3 +51,17 @@ int main(void) {
   test_ssort();
   }
 
+void swap_max(int array[], int length, int n)
+{
+    int largest = n;
+    for(int i=n;i<length;i++)
+    {
+        if(array[i]>array[largest])
+        {
+            largest=i;
+        }
+    }
+    int temp=array[largest];
+    array[largest]= array[n];
+    array[n]=temp;
+}
